@@ -72,10 +72,30 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--wihtcolor);
-
+    position: relative;
 }
+
+header nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color:var(--orangColor) ;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover:before{
+    width: 100%;
+}
+
+
+
+
+
 
 header nav ul li a:hover{
     color: var(--orangColor);
