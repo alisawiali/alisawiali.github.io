@@ -9,19 +9,20 @@
     cursor: pointer;
 }
 :root{
-    --mainColor:#3D0814;
+    --reddColor:#3D0814;
     --mainColor:#E7F9A9;
-    --mainColor:#C6B38E;
-    --mainColor:#140bb1;
+    --maisColor:#C6B38E;
+    --blueColor:#140bb1;
     --mainColor:#efefef;
-    --mainColor:#000;
+    --backColor:#000;
     --wihtcolor:#fff;
     --mainColor:#ccc;
+    --orangColor:#ffa500;
+    --orangsColor:#b58225;
+    --blackColor:#000000;
 
 }
-body{
-    height: 150vh;
-}
+
 
 /* --------------------header----------- */
 
@@ -36,7 +37,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
+    color: var( --wihtcolor);
     overflow: auto;
 }
 
@@ -54,7 +55,7 @@ header{
     text-align: center;
 }
 .logo span{
-    color: orange;
+    color: var(--orangColor);
     font-size: 3rem;
 }
 
@@ -72,16 +73,16 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     font-size: 1.4rem;
-    color: #ffff;
+    color: var(--wihtcolor);
 
 }
 
 header nav ul li a:hover{
-    color: orange;
+    color: var(--orangColor);
 }
 header nav ul li a i{
     margin-right: 01rem;
-    color: orange;
+    color:  var(--orangColor);
 }
 
 /* --------form-container--------------- */
@@ -107,7 +108,7 @@ header nav ul li a i{
     font-size: 6rem;
     letter-spacing: 2px;
     padding-bottom: 1.5rem;
-    text-shadow: 0px 10px 10px #000;
+    text-shadow: 0px 10px 10px #000000;
 }
 
 .form-container .detales h3{
@@ -123,8 +124,8 @@ header nav ul li a i{
 
  .form-container .detales #more{
     text-decoration: none;
-    color: #fff;
-    background:rgb(255, 166, 0) ;
+    color: var( --wihtcolor);
+    background: var(--orangColor) ;
     width: 200px;
     margin-top: 2rem;
     padding: 5px 0;
@@ -132,11 +133,15 @@ header nav ul li a i{
     border-radius: 10px;
     margin-bottom: 20px;
 } 
+.form-container .detales #more:hover{
+    background-color: var(--orangsColor) ;
+}
 
 
 .inputInfor{
     width: 35%;
-    background-color: #fff;
+    height: 500px;
+    background-color:  var( --wihtcolor);
     padding: 40px;
     color: #000;
     border-radius: 4px;
@@ -164,23 +169,24 @@ header nav ul li a i{
     margin: 10px 0px;
     /* padding: 5px 0px;
     margin: 10px 0; */
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--blackColor);
     position: relative;
     font-size: 1rem;
 } 
 
 .inputInfor .inputBox input[type="submit"]{
     width: 100px;
-    background: orange;
+    background:  var(--orangColor);
     border-radius: 3px;
     padding: 10px;
     cursor: pointer;
     border: none;
+    
 } 
 
 
 .inputInfor .inputBox input[type="submit"]:hover{
-    background:rgba(255, 166,16, 0.9);;
+    background: var(--orangsColor);
 }
 
 
@@ -202,28 +208,29 @@ header nav ul li a i{
     margin: 0 auto;
 }
 
-
-
-
 #Ländern .wapper #About{
     font-size: 3rem;
     font-weight: 700;
     padding-bottom:20px ;
     font-family: 'Courier New', Courier, monospace;
+    color: var(  --orangColor);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .wapp-titel a{
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color:--blackColor;
     font-size: 2rem;
 }
 
 .wapp-titel {
     text-align: center;
+    padding: 2rem 0 ;
 }
 
-.Ländern .wapper .wapp-titel  h6{
+ .wapp-titel h6{
   font-size: 2rem;
   padding-bottom: 30px;
 }
@@ -256,7 +263,7 @@ header nav ul li a i{
     transition: all 0.5s ease;
 }
 .europa-parent a:hover{
-    color: #000;
+    color: --blackColor;
 }
 
 
@@ -286,13 +293,13 @@ header nav ul li a i{
 
 .süd-parent a{
     text-decoration: none;
-    color: orange;
+    color: var(--orangColor);
     font-size: 2rem;
     transition: all 0.5s ease;
 }
 
 .süd-parent a:hover{
-    color: #000;
+    color: --blackColor;
 }
 
 .süd-parent p{
@@ -346,7 +353,7 @@ aside{
     width: 30%;
     padding: 5px;
     border-radius: 8px;
-    background: rgb(255, 166, 0);
+    background: var(--orangColor);
     outline: none;
     border: none;
     font-size: 0.8rem;
@@ -386,7 +393,7 @@ aside{
 .preise .preise-titel h2{
     font-size: 2rem;
     font-weight: 500;
-    color: orange;
+    color:  var(--orangColor);
 }
 
 
@@ -414,7 +421,7 @@ aside{
     padding: 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: orange;
+    background:  var(--orangColor);
 }
 
 
@@ -442,7 +449,7 @@ aside{
 
 
 .border .border-haupt:hover{
-    border: 2px solid orange;
+    border: 2px solid  var(--orangColor);
     transform: translateY(-3px);
 }
 
@@ -474,8 +481,8 @@ aside{
     width: 100%;
     font-size: 1em;
     font-weight: 600;
-    color: orange;
-    border: 1px solid orange;
+    color:  var(--orangColor);
+    border: 1px solid  var(--orangColor);
     background: transparent;
 }
 
@@ -505,7 +512,7 @@ aside{
     text-transform: capitalize;
     font-size: 1.4rem;
     font-weight: 500;
-    color: orange;
+    color: var(--orangColor);
 }
 .Home-Card #titel #p-one{
     font-size: 2.4rem;
@@ -542,7 +549,7 @@ aside{
     left: 10px;
     width: 0;
     height: 2px;
-    background: orange;
+    background:  var(--orangColor);
     transition: all 0.8s ease;
 }
 .Home-Card .imges .bitar h3:hover::after{
@@ -560,7 +567,7 @@ aside{
     font-size: 0.8rem;
     padding: 10px;
     background: #C6B38E;
-    color: #fff;
+    color:  var( --wihtcolor);
     border-radius: 20px;
     transition: all 0.7s ease;
     
@@ -615,6 +622,7 @@ footer{
     background-color: rgba(97, 105, 70,0.5);
     overflow: auto;
     position: relative;
+
 }
 
 .footer-fist{
@@ -639,11 +647,11 @@ footer{
     height: 3px;
     bottom: -10px;
     left: 0;
-    background-color:#fff;
+    background-color: var( --backColor);
 }
 
 .footer-fist .quen p{
-    color: #0009;
+    color: --blackColor;
 }
 
 
@@ -662,7 +670,7 @@ footer{
 .quen-tow li a{
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color:  var( --wihtcolor);
     display: inline-block;
     display: grid;
     justify-content:center;
@@ -670,6 +678,7 @@ footer{
     text-decoration: none;
     border-radius: 50%;
     transition: all 0.5s ease;
+
 }
 
 .quen-tow li a:hover{
@@ -682,7 +691,7 @@ footer{
 }
 
 .mallo li a{
-    color: #0009;
+    color: var(--backColor);
     text-decoration: none;
     padding-bottom: 0.6rem;
     display: inline-block;
@@ -690,7 +699,7 @@ footer{
 }
 
 .mallo li a:hover{
-    color: #fff;
+    color:  var( --wihtcolor);
 }
 
 
@@ -703,12 +712,12 @@ footer{
 
 
 .Quen-info .fa-solid{
-    color: #fff;
+    color:  var( --wihtcolor);
 }
 
 .Quen-info a{
     text-decoration: none;
-    color: #000;
+    color: var(--backColor);
 }
 
 .Quen-info a:hover{
@@ -733,7 +742,7 @@ footer{
     position: absolute;
     right: 1rem;
     font-size: 2rem;
-    color: #000;
+    color: var(--backColor);
 }
 
 
@@ -789,11 +798,6 @@ footer{
 
 @media (max-width:600px){
 
-
-
-
-
-
     .form-container{
         flex-direction: column;
     }
@@ -808,6 +812,7 @@ footer{
         letter-spacing: 2px;
         padding-bottom: 1.5rem;
         padding-top: 4rem;
+      
     }
 
 
@@ -816,7 +821,7 @@ footer{
         text-align: center;
         font-size: 20px;
         font-weight: 800;
-        color: rgb(0, 0, 0);
+        color: --blackColor;
         text-transform: uppercase;   
     }
 
@@ -827,7 +832,7 @@ footer{
         text-align: center;
         font-size: 1rem;
         font-weight: 300;
-        color: #000;
+        color: --blackColor;
     }
     .form-container .detales h3{
         font-size: 1rem;
@@ -848,19 +853,20 @@ footer{
 
 
 @media (max-width:866px){
+ 
+/* ---------------------footer----------------- */
 
     footer{
         padding: 40px;
     } 
     .footer-fist {
-        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     header {
         background: #000;
         backdrop-filter: blur(10px);
-        height: 350px;
+        height: 340px;
         position: absolute;
         top: -50px;
         padding-bottom: 30px;
@@ -879,10 +885,6 @@ footer{
         color: rgb(255, 255, 255);
         font-size: 1rem;
      }
-
-   
-
-
 }
 
 @media(max-width:560px){
