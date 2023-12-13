@@ -50,7 +50,14 @@ svg,img { max-width: 100%; height: auto; }
   1. >>> Headr Style
 ----------------------------------------------------------------*/
 .ds-header{ padding-top:2.5rem; padding-bottom: 7.8125rem; position: relative;  }
-.ds-logo a{ display: inline-block; background-color: #CBFE00; font-weight: 600; font-size: 1.125rem; padding: 0  0.4375rem; color: #000}
+.ds-logo a {
+	display: inline-block;
+	background-color: #CBFE00;
+	font-weight: 600;
+	font-size: 2rem;
+	padding: 0 0.4375rem;
+	color: #000
+}
 .ds-logo a:hover,.ds-logo a:focus{color: #000}
 /*-----------------------------------------------------------------
   2. >>> Banner Style
@@ -66,7 +73,15 @@ svg,img { max-width: 100%; height: auto; }
 .ds-social li:hover a{background-color: #CBFE00; color:#000 }
 
 .ds-banner figure{width: 370px; position: relative;}
-.ds-banner figure figcaption{ color: #FFF; font-size:1.875rem; position: absolute; bottom: 0; width: 100%; text-align: center; padding-bottom:2.5rem  }
+.ds-banner figure figcaption {
+	color: #010101;
+	font-size: 1.875rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2.5rem
+}
 /*-----------------------------------------------------------------
   3. >>> Resume Style
 ----------------------------------------------------------------*/
