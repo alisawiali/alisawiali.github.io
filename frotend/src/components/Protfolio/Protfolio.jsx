@@ -31,7 +31,7 @@ const Protfolio = () => {
     prevArrow: <FaArrowLeft />,
   };
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="Protfolio">
       {/* heading */}
       <div className="headingPor" data-aos="fade-left">
         <span className="head-title">Recent Project</span>

@@ -17,7 +17,7 @@ const Services = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="services" data-aos="fade-right">
+    <div className="services" data-aos="fade-right" id="Services">
       {/* Linke Seite */}
       <div className="awesome">
         <span>Awesome Features</span>

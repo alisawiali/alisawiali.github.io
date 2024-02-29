@@ -30,12 +30,15 @@
       ul {
         display: flex;
 
-        li {
-          margin-right: 2rem;
-          transition: 0.5s;
-          &:hover {
-            cursor: pointer;
-            color: $organeColor;
+        a {
+          li {
+            margin-right: 2rem;
+            transition: 0.5s;
+
+            &:hover {
+              cursor: pointer;
+              color: $organeColor;
+            }
           }
         }
       }

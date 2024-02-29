@@ -14,7 +14,7 @@ const Intro = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="intro">
+    <div className="intro" id="Intro">
       <div className="intro-left" data-aos="fade-right">
         <div className="intro-name">
           <span>Hy! I'am</span>

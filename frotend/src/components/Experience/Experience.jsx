@@ -8,7 +8,7 @@ const Experience = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="experience" data-aos="fade-up">
+    <div className="experience" data-aos="fade-up" id="Experience">
       <div className="achievement">
         <div className="circle">+1</div>
         <span>Yeras</span>

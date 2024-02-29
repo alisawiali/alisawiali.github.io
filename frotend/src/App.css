@@ -10,18 +10,21 @@
 
 .container {
     padding: 0 4rem;
-        overflow: auto;
+    overflow: auto;
 }
+
 a {
     text-decoration: none;
-    color: white;
+
 }
+
+
 
 li {
     list-style-type: none;
 }
 
-.active {
+.actives {
     color: orange;
 }
 

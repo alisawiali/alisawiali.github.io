@@ -5,6 +5,10 @@ import Toggel from "../Toggel/Toggel";
 //  import  themeContext auds dem context
 import { themeContext } from "../../context";
 import { useContext } from "react";
+
+//  import react scroll aus dem react-scroll.
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -39,10 +43,18 @@ const Navbar = () => {
           style={{ color: darkMode ? "orange" : "black" }}
         >
           <ul>
-            <li className="active">Home</li>
-            <li>Services</li>
-            <li>Experience</li>
-            <li>Protfolio</li>
+            <Link spy={true} smooth={true} to="intro">
+              <li className="actives">Home</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Services">
+              <li>Services</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Experience">
+              <li>Experience</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Protfolio">
+              <li>Protfolio</li>
+            </Link>
           </ul>
         </div>
         <button onClick={openModal} className="btn b-btn">
