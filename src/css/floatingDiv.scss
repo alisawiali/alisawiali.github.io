@@ -1,0 +1,16 @@
+.floatingDiv {
+  position: relative;
+  .CrownContainer {
+    background-color: $organeColor;
+    padding: 0.8rem;
+    border-radius: 20px;
+    .crwonImg {
+      width: 100px;
+    }
+    span {
+      width: 100px;
+      padding-left: 1rem;
+      color: $whitColor;
+    }
+  }
+}

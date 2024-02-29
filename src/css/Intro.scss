@@ -1,0 +1,67 @@
+@import "./Colors.scss";
+.intro {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 77vh;
+  margin-top: 6rem;
+  .intro-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+
+    .intro-name {
+      display: flex;
+      flex-direction: column;
+      span:nth-child(1) {
+        color: $blackColor;
+        font-weight: bold;
+        font-size: 4rem;
+      }
+      span:nth-child(2) {
+        color: $organeColor;
+        font-size: 5rem;
+      }
+      span:nth-child(3) {
+        color: $textColor;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-top: 1rem;
+        width: 600px;
+      }
+    }
+    .i-btn {
+      width: 200px;
+    }
+    .intro-icons {
+      display: flex;
+      margin-top: 3rem;
+      .i-icon {
+        margin-left: 2rem;
+        font-size: 5rem;
+        color: $organeColor;
+        transition: all 0.5s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          color: #000;
+        }
+      }
+    }
+  }
+  .intro-rihgt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    .imadIcon {
+      width: 80%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Horizontale Verschiebung, Vertikale Verschiebung, Unschärfe, Farbe
+    }
+  }
+}
