@@ -23,7 +23,7 @@ const Services = () => {
         <span>Awesome Features</span>
         <span>Services</span>
         <span>
-          Junior Front-end developer,I enjoy spending my time tackling
+          Front-end, Backend developer,I enjoy spending my time tackling
           interesting problems, and presenting feasible innovative solutions, I
           am always driven by my curiosity to find answers to the most pressing
           questions, I am blessed to have the ability to quickly learn and adapt
