@@ -7,10 +7,7 @@ I'm Imad Alisawi, a professional Full Stack Developer based in Berlin. With a ba
 
 ## Portfolio Content
 - **index.html**: The main landing page of my portfolio website.
-- **styles/**: Directory containing CSS files for styling.
-- **scripts/**: Directory containing JavaScript files for interactivity.
-- **images/**: Directory containing images used in the portfolio.
-- **projects/**: Directory containing sub-pages or files for individual projects showcased in the portfolio.
+- **assets/**: Directory containing CSS / images and other files for styling.
 
 ## Setup Instructions
 To view the portfolio locally, follow these steps:
