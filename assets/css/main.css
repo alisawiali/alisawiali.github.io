@@ -25,7 +25,6 @@ img {
 	border: none;
 	outline: none;
 	height: auto;
-	
 }
 input,textarea {border-radius: 0;resize: none;}
 ul {padding: 0;margin: 0;}
@@ -39,7 +38,6 @@ svg,
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 50%;
 }
 
 /*-----------------------------------------------------------------
