@@ -25,7 +25,7 @@ img {
 	border: none;
 	outline: none;
 	height: auto;
-	border-radius: 50%;
+	
 }
 input,textarea {border-radius: 0;resize: none;}
 ul {padding: 0;margin: 0;}
@@ -35,7 +35,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {back
 /* 1.2 Typography */
 h1,h2,h3,h4,h5,h6 {font-family: 'Inter', sans-serif;}
 figure{ margin: 0 }
-svg,img { max-width: 100%; height: auto; }
+svg,
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
 
 /*-----------------------------------------------------------------
   1. >>> Headr Style
