@@ -8,230 +8,175 @@
     <title>Imad Alisawi - Full-Stack Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Body */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7fc;
-            color: #333;
+            background-color: #f3f4f6;
             margin: 0;
             padding: 0;
         }
 
-        /* Header */
         header {
             background-color: #4A90E2;
             color: white;
-            padding: 60px 0;
-            text-align: center;
+            padding: 20px;
         }
 
-        header h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
+        h1,
+        h2 {
+            margin: 0;
         }
 
-        header p {
-            font-size: 1.25rem;
-            margin-top: 10px;
-        }
-
-        /* Content Container */
         .content {
-            padding: 40px 20px;
+            padding: 20px;
         }
 
-        /* Section */
         .section {
-            margin-bottom: 40px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
 
         .section h3 {
-            font-size: 1.75rem;
-            color: #4A90E2;
-            margin-bottom: 20px;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
         }
 
-        .section ul {
+        .contact-info,
+        .skills,
+        .experience,
+        .education {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info ul,
+        .skills ul,
+        .experience ul,
+        .education ul {
             list-style-type: none;
             padding-left: 0;
         }
 
-        .section li {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
+        .contact-info li,
+        .skills li,
+        .experience li,
+        .education li {
+            margin-bottom: 8px;
         }
 
-        /* Contact Button */
         .contact-btn {
             background-color: #4A90E2;
             color: white;
-            padding: 15px 30px;
+            padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
             transition: background-color 0.3s ease;
         }
 
         .contact-btn:hover {
             background-color: #357ABD;
         }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding-top: 60px;
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 10% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            border-radius: 8px;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
     </style>
 </head>
 
 <body>
-<header>
-    <h1>Imad Alisawi</h1>
-    <p>Full-Stack Developer</p>
+<header class="text-center">
+    <h1 class="text-4xl">Imad Alisawi</h1>
+    <p class="text-lg">Full-Stack Developer</p>
 </header>
 
-<div class="content container mx-auto">
+    <div class="content container mx-auto">
 
-    <!-- Kontaktbereich -->
-    <section class="section contact-info">
-        <h3>Kontaktinformation</h3>
-        <ul>
-            <li><strong>Email:</strong> alisawiali70@gmail.com</li>
-            <li><strong>Telefon:</strong> +4917681423083</li>
-            <li><strong>Adresse:</strong> Preußenallee, 14025 Berlin/Charlottenburg</li>
-            <li><strong>Geburtsdatum:</strong> 28. April 1986</li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alisawi-imad" target="_blank"
-                    class="text-blue-500 hover:underline">linkedin.com/in/alisawi-imad</a></li>
-        </ul>
-    </section>
+        <!-- Kontaktbereich -->
+        <section class="section contact-info">
+            <h3>Kontaktinformation</h3>
+            <ul>
+                <li><strong>Email:</strong> alisawiali70@gmail.com</li>
+                <li><strong>Telefon:</strong> +4917681423083</li>
+                <li><strong>Adresse:</strong> Preußenallee, 14025 Berlin/Charlottenburg</li>
+                <li><strong>Geburtsdatum:</strong> 28. April 1986</li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alisawi-imad"
+                        target="_blank">linkedin.com/in/alisawi-imad</a></li>
+                </ul>
+                </section>
 
-    <!-- Fähigkeiten -->
-    <section class="section skills">
-        <h3>Kenntnisse und Fähigkeiten</h3>
-        <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>UX/UI Design</li>
-            <li>Frontend-Entwicklung</li>
-            <li>Tailwind.css, Bootstrap</li>
-        </ul>
-    </section>
+        <!-- Fähigkeiten -->
+        <section class="section skills">
+            <h3>Kenntnisse und Fähigkeiten</h3>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UX/UI Design</li>
+                <li>Frontend-Entwicklung</li>
+                <li>Tailwind.css, Bootstrap</li>
+            </ul>
+        </section>
 
-    <!-- Profil -->
-    <section class="section">
-        <h3>Profil</h3>
-        <p>
-            Ich bin Imad und arbeite als Frontend Developer. Meine berufliche Karriere begann als Journalist,
-            wo ich Erfahrungen als Kameramann, Reporter und Radiosprecher sammelte. Im Laufe der Zeit
-            spezialisierte ich mich auf den Bereich Webentwicklung, insbesondere im Frontend.
-        </p>
-    </section>
+        <!-- Profil -->
+        <section class="section">
+            <h3>Profil</h3>
+            <p>
+                Ich bin Imad und arbeite als Frontend Developer. Meine berufliche Karriere begann als Journalist,
+                wo ich Erfahrungen als Kameramann, Reporter und Radiosprecher sammelte. Im Laufe der Zeit
+                spezialisierte ich mich auf den Bereich Webentwicklung, insbesondere im Frontend.
+            </p>
+        </section>
 
-    <!-- Berufserfahrung -->
-    <section class="section experience">
-        <h3>Berufserfahrung</h3>
-        <ul>
-            <li><strong>Fullstack Webentwicklung</strong> (Dez. 2022 - Feb. 2024) - DCI Digital Career Institute
-                GmbH, Berlin</li>
-            <li><strong>Frontend Developer</strong> (Jan. 2024 - Feb. 2024) - Siemens, Berlin</li>
-            <li><strong>Marketing Spezialist</strong> (Jan. 2021 - Jan. 2022) - Wild Game Arts</li>
-            <li><strong>Mitarbeiter Qualitätssicherung</strong> (Jan. 2017 - Dez. 2020) - Carl ZEISS GmbH, Berlin
-            </li>
-        </ul>
-    </section>
+        <!-- Berufserfahrung -->
+        <section class="section experience">
+            <h3>Berufserfahrung</h3>
+            <ul>
+                <li><strong>Fullstack Webentwicklung</strong> (Dez. 2022 - Feb. 2024) - DCI Digital Career Institute
+                    GmbH, Berlin</li>
+                <li><strong>Frontend Developer</strong> (Jan. 2024 - Feb. 2024) - Siemens, Berlin</li>
+                <li><strong>Marketing Spezialist</strong> (Jan. 2021 - Jan. 2022) - Wild Game Arts</li>
+                <li><strong>Mitarbeiter Qualitätssicherung</strong> (Jan. 2017 - Dez. 2020) - Carl ZEISS GmbH, Berlin
+                </li>
+            </ul>
+        </section>
 
-    <!-- Ausbildung -->
-    <section class="section education">
-        <h3>Ausbildung & Zertifikate</h3>
-        <ul>
-            <li><strong>Full-Stack Webentwicklung</strong> - DCI Berlin (Feb. 2024)</li>
-            <li><strong>Medienwissenschaften</strong> - Radio Bagdad, Bagdad (Juli 2012)</li>
-            <li><strong>Führerschein</strong> - Busführerschein Klasse D, D1, D1E, DE, B (Sept. 2015)</li>
-        </ul>
+        <!-- Ausbildung -->
+        <section class="section education">
+            <h3>Ausbildung & Zertifikate</h3>
+            <ul>
+                <li><strong>Full-Stack Webentwicklung</strong> - DCI Berlin (Feb. 2024)</li>
+                <li><strong>Medienwissenschaften</strong> - Radio Bagdad, Bagdad (Juli 2012)</li>
+                <li><strong>Führerschein</strong> - Busführerschein Klasse D, D1, D1E, DE, B (Sept. 2015)</li>
+            </ul>
+        </section>
+
+        <!-- Sprachen -->
+        <section class="section">
+            <h3>Sprachen</h3>
+            <ul>
+                <li>Arabisch (Muttersprache)</li>
+                <li>Deutsch (Fließend)</li>
+                <li>Englisch (Fließend)</li>
+            </ul>
         </section>
         
-        <!-- Download Button -->
-        <div class="flex justify-center">
-            <button class="contact-btn" id="myBtn">Lebenslauf herunterladen</button>
-        </div>
+        <!-- Hobbys -->
+        <section class="section">
+            <h3>Hobbys und Interessen</h3>
+            <ul>
+                <li>Fußball, Joggen, Sport</li>
+                <li>Programmieren, Gaming</li>
+                <li>Kochen, Reisen</li>
+                <li>Tanzen, Musik hören</li>
+                <li>Lesen</li>
+            </ul>
+        </section>
+
+        <!-- Download-Link für Lebenslauf -->
+        <section class="section">
+            <h3>Download Lebenslauf</h3>
+            <a href="./assets/lebenslauf/Alisawi_Imad_Lebenslauf.pdf" class="contact-btn" target="_blank">Download
+                Lebenslauf</a>
+        </section>
 
     </div>
-
-    <!-- Modal for Download -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Lebenslauf Download</h2>
-            <p>Hier kannst du meinen Lebenslauf herunterladen:</p>
-            <hr>
-            <a href="./assets/lebenslauf/Alisawi Imad.pdf" class="contact-btn" target="_blank">Download</a>
-        </div>
-    </div>
-
-    <!-- Modal Script -->
-    <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
-
-                // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks the button, open the modal
-                btn.onclick = function () {
-                    modal.style.display = "block";
-                }
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function () {
-                    modal.style.display = "none";
-                }
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-    </script>
 
 </body>
 
