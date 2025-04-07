@@ -8,84 +8,123 @@
     <title>Imad Alisawi - Full-Stack Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Body */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f4f7fc;
+            color: #333;
             margin: 0;
             padding: 0;
         }
 
+        /* Header */
         header {
             background-color: #4A90E2;
             color: white;
-            padding: 20px;
+            padding: 60px 0;
+            text-align: center;
         }
 
-        h1,
-        h2 {
-            margin: 0;
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
         }
 
+        header p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+
+        /* Content Container */
         .content {
-            padding: 20px;
+            padding: 40px 20px;
         }
 
+        /* Section */
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .section h3 {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
+            font-size: 1.75rem;
+            color: #4A90E2;
+            margin-bottom: 20px;
         }
 
-        .contact-info,
-        .skills,
-        .experience,
-        .education {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info ul,
-        .skills ul,
-        .experience ul,
-        .education ul {
+        .section ul {
             list-style-type: none;
             padding-left: 0;
         }
 
-        .contact-info li,
-        .skills li,
-        .experience li,
-        .education li {
-            margin-bottom: 8px;
+        .section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
         }
 
+        /* Contact Button */
         .contact-btn {
             background-color: #4A90E2;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 15px 30px;
             border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
+            font-size: 1.2rem;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         .contact-btn:hover {
             background-color: #357ABD;
         }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
 
-    <header class="text-center">
-        <h1 class="text-4xl">Imad Alisawi</h1>
-        <p class="text-lg">Full-Stack Developer</p>
+    <header>
+        <h1>Imad Alisawi</h1>
+        <p>Full-Stack Developer</p>
     </header>
 
     <div class="content container mx-auto">
@@ -98,10 +137,10 @@
                 <li><strong>Telefon:</strong> +4917681423083</li>
                 <li><strong>Adresse:</strong> Preußenallee, 14025 Berlin/Charlottenburg</li>
                 <li><strong>Geburtsdatum:</strong> 28. April 1986</li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alisawi-imad"
-                        target="_blank">linkedin.com/in/alisawi-imad</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alisawi-imad" target="_blank"
+                        class="text-blue-500 hover:underline">linkedin.com/in/alisawi-imad</a></li>
             </ul>
-            </section>
+        </section>
 
         <!-- Fähigkeiten -->
         <section class="section skills">
@@ -148,36 +187,51 @@
             </ul>
         </section>
 
-        <!-- Sprachen -->
-        <section class="section">
-            <h3>Sprachen</h3>
-            <ul>
-                <li>Arabisch (Muttersprache)</li>
-                <li>Deutsch (Fließend)</li>
-                <li>Englisch (Fließend)</li>
-            </ul>
-        </section>
+        <!-- Download Button -->
+        <div class="flex justify-center">
+            <button class="contact-btn" id="myBtn">Lebenslauf herunterladen</button>
+        </div>
+        
+        </div>
+        
+        <!-- Modal for Download -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Lebenslauf Download</h2>
+                <p>Hier kannst du meinen Lebenslauf herunterladen:</p>
+                <a href="https://drive.google.com/file/d/your-file-id/view" class="contact-btn" target="_blank">Download</a>
+            </div>
+        </div>
+        
+        <!-- Modal Script -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
 
-        <!-- Hobbys -->
-        <section class="section">
-            <h3>Hobbys und Interessen</h3>
-            <ul>
-                <li>Fußball, Joggen, Sport</li>
-                <li>Programmieren, Gaming</li>
-                <li>Kochen, Reisen</li>
-                <li>Tanzen, Musik hören</li>
-                <li>Lesen</li>
-            </ul>
-        </section>
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
 
-        <!-- Download-Link für Lebenslauf -->
-        <section class="section">
-            <h3>Download Lebenslauf</h3>
-            <a href="./assets/lebenslauf/Alisawi Imad.pdf" class="contact-btn" target="_blank">Download
-                Lebenslauf</a>
-        </section>
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
-    </div>
+            // When the user clicks the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
 </body>
 
