@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lebenslauf – Imad Alisawi
-        <a href="./assets/lebenslauf/Imad___Alisawi_CV.docx"></a>
+    <title>
+        <a href="./assets/lebenslauf/Imad___Alisawi_CV.docx">Lebenslauf – Imad Alisawi</a>
     </title>
-    
+
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-<!-- AOS Animationen -->
+
+    <!-- AOS Animationen -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="bg-gray-100 min-h-screen p-6">
 
     <div class="max-w-5xl mx-auto bg-white p-10 rounded-2xl shadow-xl space-y-12">
-    
+
         <!-- Header mit PDF-Button -->
         <header data-aos="fade-down" class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
             <div>
@@ -31,7 +33,7 @@
                     Du kannst ihn unten direkt ansehen oder als PDF herunterladen.
                 </p>
             </div>
-    
+
             <!-- PDF Download Button -->
             <a href="Lebenslauf_Imad_Alisawi.pdf" download
                 class="mt-4 sm:mt-0 inline-flex items-center space-x-2 bg-blue-600 text-white px-5 py-2 rounded-xl shadow hover:bg-blue-700 transition duration-300">
@@ -65,7 +67,7 @@
                     <a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank"
                         class="text-blue-600 hover:underline">linkedin.com/in/alisawi-imad</a>
                 </div>
-                
+
                 <div class="flex items-center space-x-2">
                     <i data-lucide="github" class="w-4 h-4 text-blue-600"></i>
                     <a href="https://github.com/alisawiali/alisawiali.github.io" target="_blank"
@@ -82,35 +84,39 @@
 
                 <div>
                     <h3 class="font-semibold text-lg">Busfahrer – BT Berlin Transport GmbH</h3>
-                    <p class="italic mb-1">Jun 2024 </p>
+                    <p class="italic mb-1">seit Dez 2024</p>
                     </div>
 
                 <div>
+                    <h3 class="font-semibold text-lg">Busfahrer – Berliner Verkehrsbetriebe (BVG)</h3>
+                    <p class="italic mb-1">Jun 2024 – Nov 2024</p>
+                    </div>
+
                 <div>
                     <h3 class="font-semibold text-lg">Frontend Developer – Siemens, Berlin</h3>
                     <p class="italic mb-1">Jan 2024 – Mär 2024</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Dreimonatiges Pflichtpraktikum als Webentwickler im Rahmen der DCI-Weiterbildung</li>
                         <li>Bestehende Webseiten gepflegt, optimiert und verbessert</li>
+                    </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg">Fullstack Webentwicklung – DCI Digital Career Institute GmbH,
+                            Berlin</h3>
+                        <p class="italic mb-1">Dez 2022 – Feb 2024</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Vollzeitausbildung mit Schwerpunkt auf MERN-Stack-Technologien</li>
+                            <li>Abschlussprojekt „MemoEase Platform“ entwickelt</li>
+                            <li>Frontend & Backend mit Node.js, JavaScript, React.js, HTML5, CSS3</li>
+                            <li>Benutzerfreundliche Oberflächen (UI/UX) gestaltet</li>
                         </ul>
-                        </div>
-                        
-                        <div>
-                            <h3 class="font-semibold text-lg">Fullstack Webentwicklung – DCI Digital Career Institute GmbH,
-                                Berlin</h3>
-                            <p class="italic mb-1">Dez 2022 – Feb 2024</p>
-                            <ul class="list-disc list-inside ml-4">
-                                <li>Vollzeitausbildung mit Schwerpunkt auf MERN-Stack-Technologien</li>
-                                <li>Abschlussprojekt „MemoEase Platform“ entwickelt</li>
-                                <li>Frontend & Backend mit Node.js, JavaScript, React.js, HTML5, CSS3</li>
-                                <li>Benutzerfreundliche Oberflächen (UI/UX) gestaltet</li>
-                            </ul>
-                            </div>
-                            
-                            <div>
-                                <h3 class="font-semibold text-lg">Freelance Social Media Marketing Specialist – Wild Game Arts
-                                    (online)</h3>
-                                <p class="italic mb-1">Jan 2021 – Jan 2022</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg">Freelance Social Media Marketing Specialist – Wild Game Arts
+                            (online)</h3>
+                        <p class="italic mb-1">Jan 2021 – Jan 2022</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Social-Media-Marketing und Neukundenakquise</li>
                     </ul>
@@ -218,15 +224,16 @@
         </section>
 
         <!-- Datum -->
-        <footer class="text-right text-gray-600 text-sm itlic" data-aos="fade-up">
+        <footer class="text-right text-gray-600 text-sm italic" data-aos="fade-up">
             <p>Berlin, 15. Oktober 2025</p>
         </footer>
     </div>
-<!-- Init Scripts -->
+
+    <!-- Init Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-                        AOS.init({ duration: 1000, once: true });
-                        lucide.createIcons();
+            AOS.init({ duration: 1000, once: true });
+            lucide.createIcons();
         </script>
 
 </body>
