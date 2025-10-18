@@ -4,150 +4,192 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lebenslauf Imad Alisawi</title>
+    <title>Lebenslauf – Imad Alisawi
+        <a href="./assets/lebenslauf/Imad___Alisawi_CV.docx"></a>
+    </title>
+    
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+<!-- AOS Animationen -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="bg-gray-100 min-h-screen p-6">
 
-    <div class="max-w-5xl mx-auto bg-white p-10 rounded-lg shadow-lg space-y-12">
+    <div class="max-w-5xl mx-auto bg-white p-10 rounded-2xl shadow-xl space-y-12">
     
+        <!-- Header mit PDF-Button -->
+        <header data-aos="fade-down" class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+            <div>
+                <h1 class="text-5xl font-bold text-blue-800 mb-2">Imad Alisawi</h1>
+                <p class="text-gray-600 text-sm max-w-xl">
+                    Willkommen auf meiner Portfolio-Seite! Hier findest du meinen vollständigen Lebenslauf mit
+                    Berufserfahrung,
+                    Ausbildung und technischen Kenntnissen.
+                    Du kannst ihn unten direkt ansehen oder als PDF herunterladen.
+                </p>
+            </div>
+    
+            <!-- PDF Download Button -->
+            <a href="Lebenslauf_Imad_Alisawi.pdf" download
+                class="mt-4 sm:mt-0 inline-flex items-center space-x-2 bg-blue-600 text-white px-5 py-2 rounded-xl shadow hover:bg-blue-700 transition duration-300">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span>Lebenslauf als PDF</span>
+            </a>
+        </header>
+
         <!-- Persönliche Daten -->
         <section data-aos="fade-up">
-            <h1 class="text-5xl font-bold text-blue-800 mb-4">Imad Alisawi</h1>
+            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">Persönliche Daten</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-gray-700 text-sm">
-                <div class="font-semibold">Adresse:</div>
-                <div>Preußenallee 35, 14052 Berlin-Charlottenburg</div>
-    
-                <div class="font-semibold">E-Mail:</div>
-                <div><a href="mailto:alisawiali70@gmail.com"
-                        class="text-blue-600 hover:underline">alisawiali70@gmail.com</a></div>
-    
-                <div class="font-semibold">Telefon:</div>
-                <div><a href="tel:+4917681423083" class="text-blue-600 hover:underline">+49 176 81423083</a></div>
-    
-                <div class="font-semibold">LinkedIn:</div>
-                <div><a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank" rel="noopener"
-                        class="text-blue-600 hover:underline">linkedin.com/in/alisawi-imad</a></div>
-    
-                <div class="font-semibold">GitHub:</div>
-                <div><a href="https://github.com/alisawiali/alisawiali.github.io" target="_blank" rel="noopener"
-                        class="text-blue-600 hover:underline">github.com/alisawiali</a></div>
+
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
+                    <span>Preußenallee, 14025 Berlin-Charlottenburg</span>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="mail" class="w-4 h-4 text-blue-600"></i>
+                    <a href="mailto:alisawiali70@gmail.com" class="text-blue-600 hover:underline">alisawiali70@gmail.com</a>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-blue-600"></i>
+                    <a href="tel:+4917681423083" class="text-blue-600 hover:underline">+49 176 81423083</a>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i>
+                    <a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank"
+                        class="text-blue-600 hover:underline">linkedin.com/in/alisawi-imad</a>
+                </div>
+                
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="github" class="w-4 h-4 text-blue-600"></i>
+                    <a href="https://github.com/alisawiali/alisawiali.github.io" target="_blank"
+                        class="text-blue-600 hover:underline">github.com/alisawiali</a>
+                </div>
             </div>
         </section>
 
         <!-- Berufserfahrung -->
         <section data-aos="fade-right">
             <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">Berufserfahrung</h2>
-        
+
             <div class="space-y-8 text-gray-700 text-sm">
+
                 <div>
-                    <div class="font-semibold text-lg">Busfahrer – BT Berlin Transport GmbH</div>
-                    <div class="italic mb-1">seit Jun 2024</div>
+                    <h3 class="font-semibold text-lg">Busfahrer – BT Berlin Transport GmbH</h3>
+                    <p class="italic mb-1">Jun 2024 </p>
                     </div>
+
                 <div>
-                    <div class="font-semibold text-lg">Frontend Developer – Siemens, Berlin</div>
-                    <div class="italic mb-1">Jan 2024 – Mär 2024</div>
+                <div>
+                    <h3 class="font-semibold text-lg">Frontend Developer – Siemens, Berlin</h3>
+                    <p class="italic mb-1">Jan 2024 – Mär 2024</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Dreimonatiges Pflichtpraktikum als Webentwickler im Rahmen der DCI-Weiterbildung</li>
-                        <li>Bestehende Webseiten gepflegt, optimiert und verbessert.</li>
-                    </ul>
-                </div>
-        
-                <div>
-                    <div class="font-semibold text-lg">Freelance Social Media Marketing Specialist – Wild Game Arts
-                        (online)</div>
-                    <div class="italic mb-1">Jan 2021 – Jan 2022</div>
+                        <li>Bestehende Webseiten gepflegt, optimiert und verbessert</li>
+                        </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-lg">Fullstack Webentwicklung – DCI Digital Career Institute GmbH,
+                                Berlin</h3>
+                            <p class="italic mb-1">Dez 2022 – Feb 2024</p>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Vollzeitausbildung mit Schwerpunkt auf MERN-Stack-Technologien</li>
+                                <li>Abschlussprojekt „MemoEase Platform“ entwickelt</li>
+                                <li>Frontend & Backend mit Node.js, JavaScript, React.js, HTML5, CSS3</li>
+                                <li>Benutzerfreundliche Oberflächen (UI/UX) gestaltet</li>
+                            </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-lg">Freelance Social Media Marketing Specialist – Wild Game Arts
+                                    (online)</h3>
+                                <p class="italic mb-1">Jan 2021 – Jan 2022</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Social-Media-Marketing und Neukundenakquise</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Mitarbeiter Qualitätssicherung – Carl ZEISS GmbH, Berlin</div>
-                    <div class="italic mb-1">Mai 2019 – Feb 2021</div>
+                    <h3 class="font-semibold text-lg">Mitarbeiter Qualitätssicherung – Carl ZEISS GmbH, Berlin</h3>
+                    <p class="italic mb-1">Mai 2019 – Feb 2021</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Beobachtung von Markttrends und Qualitätskontrolle</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Journalismus Praktikant – RBB Abendschau, Berlin</div>
-                    <div class="italic mb-1">Okt 2018 – Apr 2019</div>
+                    <h3 class="font-semibold text-lg">Journalismus Praktikant – RBB Abendschau, Berlin</h3>
+                    <p class="italic mb-1">Okt 2018 – Apr 2019</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Begleitung der Journalisten im Außendienst</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Journalismus Praktikant – ZDF Morgenmagazin, Berlin</div>
-                    <div class="italic mb-1">Aug 2017 – Sep 2017</div>
+                    <h3 class="font-semibold text-lg">Journalismus Praktikant – ZDF Morgenmagazin, Berlin</h3>
+                    <p class="italic mb-1">Sep 2016 – Okt 2016</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Begleitung der Journalisten im Außendienst</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Nachrichtensprecher und Reporter – Radio Falludscha, Bagdad</div>
-                    <div class="italic mb-1">Jul 2016 – Aug 2016</div>
+                    <h3 class="font-semibold text-lg">Nachrichtensprecher & Reporter – Radio Falludscha, Bagdad</h3>
+                    <p class="italic mb-1">Jul 2016 – Aug 2016</p>
                     <ul class="list-disc list-inside ml-4">
                         <li>Journalist, Kameramann, Reporter, Radiosprecher</li>
                     </ul>
                 </div>
-                </div>
+
+            </div>
         </section>
 
         <!-- Bildungsweg -->
         <section data-aos="fade-left">
             <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">Bildungsweg</h2>
-        
+
             <div class="space-y-8 text-gray-700 text-sm">
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Weiterbildung zum Web- und Softwareentwickler – DCI Digital
-                        Career Institute GmbH, Berlin</div>
-                    <div class="italic mb-1">Dez 2022 – Feb 2024</div>
+                    <h3 class="font-semibold text-lg">Weiterbildung zum Web- & Softwareentwickler – DCI Digital Career
+                        Institute, Berlin</h3>
+                    <p class="italic mb-1">Dez 2022 – Feb 2024</p>
                     <ul class="list-disc list-inside ml-4">
-                        <li>Vollzeitausbildung mit Schwerpunkt MERN-Stack-Technologien</li>
-                        <li>Mehrere Projekte inkl. Abschlussprojekt „MemoEase Platform“</li>
-                        <li>Frontend: Linux, Git/GitHub, HTML, CSS, SCSS, Bootstrap, JavaScript</li>
-                        <li>Backend: Node, NPM, React, REST API Entwicklung mit Express, MongoDB, Sicherheit &
-                            Authentifizierung</li>
+                        <li>Frontend: HTML, CSS, SCSS, Bootstrap, JavaScript, React</li>
+                        <li>Backend: Node.js, Express, MongoDB, Authentifizierung</li>
+                        <li>Abschlussprojekt: MemoEase Platform</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Ausbildung zum Busfahrer – IHK Berlin</div>
-                    <div class="italic mb-1">Prüfungsdatum 15.06.2021</div>
+                    <h3 class="font-semibold text-lg">Ausbildung zum Busfahrer – IHK Berlin</h3>
+                    <p class="italic mb-1">Okt 2020 – Jun 2021</p>
+                    <p>Prüfungsdatum: 15.06.2021</p>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Ausbildung Orthopädietechnik – Zapfe Berlin GmbH</div>
-                    <div class="italic mb-1">Sep 2017 – Jun 2018</div>
+                    <h3 class="font-semibold text-lg">Ausbildung Orthopädietechnik – Zapfe Berlin GmbH</h3>
+                    <p class="italic mb-1">Sep 2017 – Sep 2018</p>
                     <ul class="list-disc list-inside ml-4">
-                        <li>Grundkenntnisse in Orthopädietechnik</li>
-                        <li>Werkstoffbearbeitung und Kunststoffverformung</li>
-                        <li>Prothesen- und Orthesenbau</li>
-                        <li>Unterstützung bei Anproben und Auslieferungen</li>
+                        <li>Grundkenntnisse in Orthopädietechnik, Werkstoffbearbeitung, Kunststoffverformung</li>
                     </ul>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Bachelor Diplom Medienwissenschaft – Universität Bagdad, Irak
-                    </div>
-                    <div class="italic mb-1">2008 – 2012</div>
-                    <div>(Wartezeit auf Studienbeginn aufgrund lokaler Gegebenheiten)</div>
+                    <h3 class="font-semibold text-lg">Bachelor-Diplom Medienwissenschaft – Universität Bagdad, Irak</h3>
+                    <p class="italic mb-1">Sep 2008 – Jul 2012</p>
                 </div>
-        
+
                 <div>
-                    <div class="font-semibold text-lg">Sprachkurse & Sprachkenntnisse</div>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Nachweis Sprachniveau B1 (BAMF), Prüfungsdatum 11.02.2017 (Übersiedlung nach Deutschland)
-                        </li>
-                        <li>Deutsch: exzellente Sprachkenntnisse, Arabisch: Muttersprache, Englisch: Grundkenntnisse
-                        </li>
-                        </ul>
+                    <h3 class="font-semibold text-lg">Abitur – Al-Rissafi-Sekundarschule für Jungen, Bagdad</h3>
+                    <p class="italic mb-1">1998 – 2005</p>
                 </div>
 
             </div>
@@ -158,25 +200,35 @@
             <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">Technische Kenntnisse
                 & Fähigkeiten</h2>
             <p class="text-gray-700 text-sm leading-relaxed">
-                HTML5, CSS3, Tailwind CSS, Bootstrap,Excel "Tabellen erstellen" (Expertenniveau); JavaScript, React, TypeScript, UI/UX
-                Design,
-                WordPress, Frontend-Entwicklung (fortgeschritten); Node.js (gute Kenntnisse).
+                <strong>Frontend:</strong> HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, React, TypeScript, UI/UX
+                Design, WordPress<br>
+                <strong>Backend:</strong> Node.js, Express, MongoDB, REST API<br>
+                <strong>Tools:</strong> Git, GitHub, Excel (Tabellen auf Expertenniveau)
             </p>
         </section>
 
-        <!-- Ort und Datum -->
-        <section class="text-right text-gray-600 text-sm italic" data-aos="fade-up">
-            <p>Berlin, 15. Juni 2025</p>
+        <!-- Sprachkenntnisse -->
+        <section data-aos="fade-up">
+            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">Sprachkenntnisse</h2>
+            <ul class="list-disc list-inside text-gray-700 text-sm ml-4">
+                <li>Deutsch: exzellente Sprachkenntnisse</li>
+                <li>Arabisch: Muttersprache</li>
+                <li>Englisch: grundlegende Kenntnisse</li>
+            </ul>
         </section>
 
+        <!-- Datum -->
+        <footer class="text-right text-gray-600 text-sm itlic" data-aos="fade-up">
+            <p>Berlin, 15. Oktober 2025</p>
+        </footer>
     </div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-            AOS.init({
-                duration: 1000,
-                once: true,
-            });
+<!-- Init Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+                        AOS.init({ duration: 1000, once: true });
+                        lucide.createIcons();
         </script>
+
 </body>
 
 </html>
