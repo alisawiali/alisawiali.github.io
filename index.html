@@ -4,159 +4,166 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lebenslauf – Imad Alisawi</title>
+    <title>Imad Alisawi | Junior Webentwickler & IT-Support</title>
 
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- AOS Animationen -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .section-title {
+        @apply text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6 uppercase tracking-wider;
+    }
+
+    .card {
+        @apply bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300;
+    }
+</style>
 </head>
 
-<body class="bg-gray-100 min-h-screen p-6">
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-    <div class="max-w-5xl mx-auto bg-white p-10 rounded-2xl shadow-xl space-y-12">
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
 
-        <!-- Persönliche Daten -->
-        <section data-aos="fade-up">
-            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">
-                Persönliche Daten
-            </h2>
+        <header class="text-center mb-16" data-aos="fade-down">
+            <h1 class="text-5xl font-extrabold text-slate-900 mb-2">Imad Alisawi</h1>
+            <p class="text-xl text-blue-600 font-medium mb-6">Junior Webentwickler / IT-Support / Netzwerksicherheit</p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-gray-700 text-sm">
-                <div><strong>Adresse:</strong> Preußenallee 14052 Berlin-Charlottenburg</div>
-                <div><strong>E-Mail:</strong>
-                    <a href="mailto:alisawiali70@gmail.com" class="text-blue-600 hover:underline">
-                        alisawiali70@gmail.com
-                    </a>
-                </div>
-                <div><strong>Telefon:</strong>
-                    <a href="tel:+4917681423083" class="text-blue-600 hover:underline">
-                        +49 176 81423083
-                    </a>
-                </div>
-                <div><strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank" class="text-blue-600 hover:underline">
-                        linkedin.com/in/alisawi-imad
-                    </a>
-                </div>
-                <div><strong>GitHub:</strong>
-                    <a href="https://github.com/alisawiali" target="_blank" class="text-blue-600 hover:underline">
-                        github.com/alisawiali
-                    </a>
-                </div>
+            <div class="flex flex-wrap justify-center gap-4 text-sm text-slate-600">
+                <a href="mailto:alisawiali70@gmail.com" class="flex items-center gap-2 hover:text-blue-600"><i data-lucide="mail"
+                        class="w-4 h-4"></i> alisawiali70@gmail.com</a>
+                <a href="tel:+4917681423083" class="flex items-center gap-2 hover:text-blue-600"><i data-lucide="phone"
+                        class="w-4 h-4"></i> +49 176 81423083</a>
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Berlin, DE</span>
             </div>
-        </section>
+<div class="mt-8 max-w-2xl mx-auto text-slate-600 italic">
+    "Motivierter Junior Webentwickler mit fundierter IT-Weiterbildung, praktischer Projekterfahrung und
+    starkem technischem Grundverständnis. Lernbereit, strukturiert und lösungsorientiert."
+</div>
+        </header>
 
-        <!-- Berufserfahrung -->
-        <section data-aos="fade-right">
-            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">
-                Berufserfahrung
-            </h2>
+        <main class="space-y-12">
 
-            <div class="space-y-8 text-gray-700 text-sm">
+            <section data-aos="fade-up">
+                <h2 class="section-title">Berufserfahrung</h2>
+                <div class="space-y-8 border-l-2 border-slate-200 ml-2">
 
-                <div>
-                    <p class="italic mb-1">Seit Jun 2024</p>
-                    <p class="font-semibold text-lg">Mitarbeiter bei BT Berlin Transport GmbH, Junior- in OpenVPN</p>
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                        <p class="text-sm font-bold text-blue-600 uppercase">Seit Jun 2024</p>
+                        <h3 class="text-xl font-bold">Mitarbeiter</h3>
+                        <p class="text-slate-600 mb-2">BT Berlin Transport GmbH, Berlin</p>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1"></div>
+                        <p class="text-sm font-bold text-slate-500 uppercase">Dez 2022 – Feb 2024</p>
+                        <h3 class="text-xl font-bold">Fullstack Webentwicklung (MERN Stack)</h3>
+                        <p class="text-slate-600 font-medium">DCI Digital Career Institute GmbH, Berlin</p>
+                        <ul class="mt-2 space-y-1 text-slate-600 list-disc list-outside ml-4">
+                            <li>Vollzeitausbildung mit Fokus auf Node.js, JavaScript, React.js, HTML5 & CSS3.</li>
+                            <li>Entwicklung einer To-Do-Listen-App und einer Plattform für Studenten.</li>
+                            <li>Abschluss eines umfangreichen Praxisprojekts zur Vertiefung der Backend-Kenntnisse.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1"></div>
+                        <p class="text-sm font-bold text-slate-500 uppercase">Jan 2021 – Jan 2022</p>
+                        <h3 class="text-xl font-bold">Freelance Social Media Marketing Specialist</h3>
+                        <p class="text-slate-600 italic">Wild Game Arts, Online</p>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1"></div>
+                        <p class="text-sm font-bold text-slate-500 uppercase">Mai 2019 – Feb 2021</p>
+                        <h3 class="text-xl font-bold">Mitarbeiter Qualitätssicherung</h3>
+                        <p class="text-slate-600">Carl ZEISS GmbH, Berlin</p>
+                    </div>
                 </div>
+                </section>
 
-                <div>
-                
-                    <p class="italic mb-1">Jan 2024 – Mär 2024</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Dreimonatiges Pflichtpraktikum im Rahmen der DCI-Weiterbildung</li>
-                        <li>Pflege, Optimierung und Weiterentwicklung bestehender Webseiten</li>
-                    </ul>
+            <section data-aos="fade-up">
+                <h2 class="section-title">Kenntnisse & Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="text-blue-600 mb-4"><i data-lucide="layout" class="w-8 h-8"></i></div>
+                        <h3 class="font-bold mb-2">Frontend</h3>
+                        <p class="text-sm text-slate-600 text-sm">React.js, JavaScript (ES6+), Tailwind CSS, HTML5,
+                            CSS3, UI/UX Design</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-blue-600 mb-4"><i data-lucide="server" class="w-8 h-8"></i></div>
+                        <h3 class="font-bold mb-2">Backend & IT</h3>
+                        <p class="text-sm text-slate-600 text-sm">Node.js, Express, MongoDB, REST APIs, OpenVPN,
+                            Netzwerksicherheit</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-blue-600 mb-4"><i data-lucide="wrench" class="w-8 h-8"></i></div>
+                        <h3 class="font-bold mb-2">Tools</h3>
+                        <p class="text-sm text-slate-600 text-sm">Git, GitHub, Linux (Grundlagen), MS Excel (Experte),
+                            Jira</p>
+                    </div>
                 </div>
+                </section>
 
-                <div>
-                    <h3 class="font-semibold text-lg">
-                        Fullstack Webentwicklung – DCI Digital Career Institute GmbH, Berlin
-                    </h3>
-                    <p class="italic mb-1">Dez 2022 – Feb 2024</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Vollzeitausbildung mit Schwerpunkt auf MERN-Stack-Technologien</li>
-                        <li>Mehrere Praxisprojekte sowie ein umfangreiches Abschlussprojekt</li>
-                        <li>Frontend- und Backend-Entwicklung mit modernen Webtechnologien</li>
-                    </ul>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <section data-aos="fade-right">
+                    <h2 class="section-title">Sprachen</h2>
+                    <div class="card">
+                        <ul class="space-y-2">
+                            <li class="flex justify-between"><span>Deutsch</span> <span class="font-bold text-blue-600">Sehr
+                                    gut</span></li>
+                            <li class="flex justify-between"><span>Arabisch</span> <span
+                                    class="font-bold text-blue-600">Muttersprache</span></li>
+                            <li class="flex justify-between"><span>Englisch</span> <span
+                                    class="font-bold text-slate-400">Grundkenntnisse</span></li>
+                        </ul>
+                    </div>
+                </section>
 
-                <div>
-                    <h3 class="font-semibold text-lg">
-                        Freelance Social Media Marketing Specialist – Wild Game Arts (online)
-                    </h3>
-                    <p class="italic mb-1">Jan 2021 – Jan 2022</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Social-Media-Marketing und Online-Kundenakquise</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold text-lg">
-                        Mitarbeiter Qualitätssicherung – Carl ZEISS GmbH, Berlin
-                    </h3>
-                    <p class="italic mb-1">Mai 2019 – Feb 2021</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Qualitätskontrolle und Dokumentation</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold text-lg">
-                        Nachrichtensprecher & Reporter – Radio Falludscha, Bagdad
-                    </h3>
-                    <p class="italic mb-1">Jul 2012 – Jul 2015</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Moderation, Redaktion, Außendrehs und Berichterstattung</li>
-                    </ul>
-                </div>
-
+                <section data-aos="fade-left">
+                    <h2 class="section-title">Zertifikate</h2>
+                    <div class="card">
+                        <ul class="text-sm space-y-2 text-slate-600">
+                            <li class="flex items-start gap-2 italic">
+                                <i data-lucide="award" class="w-4 h-4 mt-1 text-blue-600"></i>
+                                Fullstack Web Development (DCI)
+                            </li>
+                            <li class="flex items-start gap-2 italic">
+                                <i data-lucide="award" class="w-4 h-4 mt-1 text-blue-600"></i>
+                                Linux-Systeme & Netzwerkgrundlagen
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-        </section>
+            
+            </main>
 
-        <!-- Technische Kenntnisse -->
-        <section data-aos="fade-up">
-            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">
-                Technische Kenntnisse & Fähigkeiten
-            </h2>
-
-            <p class="text-gray-700 text-sm leading-relaxed">
-                <strong>Frontend:</strong> HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, React, TypeScript, UI/UX
-                Design, WordPress<br>
-                <strong>Backend:</strong> Node.js, Express, MongoDB, REST API<br>
-                <strong>Tools:</strong> Git, GitHub, Excel (Expertenniveau), OpenVPN (Grundkenntnisse)
-            </p>
-        </section>
-
-        <!-- Sprachkenntnisse -->
-        <section data-aos="fade-up">
-            <h2 class="text-3xl font-semibold border-b-2 border-blue-600 pb-2 mb-6 text-gray-800">
-                Sprachkenntnisse
-            </h2>
-
-            <ul class="list-disc list-inside text-gray-700 text-sm ml-4">
-                <li>Deutsch: sehr gute Kenntnisse</li>
-                <li>Arabisch: Muttersprache</li>
-                <li>Englisch: grundlegende Kenntnisse</li>
-            </ul>
-        </section>
-
-        <footer class="text-right text-gray-600 text-sm italic" data-aos="fade-up">
-            <p>Berlin, 15. Oktober 2025</p>
+        <footer class="mt-20 pt-8 border-t border-slate-200 flex justify-between items-center text-slate-400 text-xs">
+            <p>&copy; 2025 Imad Alisawi</p>
+            <div class="flex gap-4">
+                <a href="https://github.com/alisawiali" target="_blank" class="hover:text-blue-600 italic">GitHub
+                    Profil</a>
+                <a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank"
+                    class="hover:text-blue-600 italic">LinkedIn</a>
+            </div>
         </footer>
-
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-            AOS.init({ duration: 1000, once: true });
+            AOS.init({ duration: 800, once: true, offset: 50 });
             lucide.createIcons();
         </script>
-
 </body>
 
 </html>
