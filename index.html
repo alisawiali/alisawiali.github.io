@@ -19,128 +19,154 @@
         .date-sidebar {
             min-width: 160px;
         }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 
 <body class="bg-slate-100 text-slate-800 p-4 md:p-12">
 
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
 
         <header
-            class="bg-slate-900 text-white p-8 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            class="gradient-bg text-white p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8 border-b-4 border-blue-500">
             <div class="space-y-4 text-center md:text-left">
-                <h1 class="text-4xl font-extrabold tracking-tight">Imad Alisawi</h1>
-                <p class="text-blue-400 font-medium text-lg uppercase tracking-widest">Fullstack Webentwickler</p>
+                <h1 class="text-5xl font-extrabold tracking-tight">Imad Alisawi</h1>
+                <p class="text-blue-400 font-semibold text-xl uppercase tracking-widest">Fullstack Webentwickler</p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="map-pin" class="w-4 h-4"></i> Berlin, Charlottenburg
+                        <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Berlin, Charlottenburg
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="mail" class="w-4 h-4"></i> <a href="mailto:alisawiali70@gmail.com"
+                        <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i> <a href="mailto:alisawiali70@gmail.com"
                             class="hover:text-white transition">alisawiali70@gmail.com</a>
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="phone" class="w-4 h-4"></i> +49 176 81423083
+                        <i data-lucide="phone" class="w-4 h-4 text-blue-400"></i> +49 176 81423083
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="linkedin" class="w-4 h-4"></i> <a
+                        <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> <a
                             href="https://www.linkedin.com/in/alisawi-imad/" target="_blank"
                             class="hover:text-white transition">LinkedIn Profil</a>
-                    </div>
-                    <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="github" class="w-4 h-4"></i> <a href="https://github.com/alisawiali" target="_blank"
-                            class="hover:text-white transition">github.com/alisawiali</a>
                     </div>
                 </div>
             </div>
             <div class="relative">
-                <div class="w-36 h-36 rounded-full border-4 border-blue-500 overflow-hidden shadow-lg">
-                    <img src="./assets/images/Imad.jpg" alt="Imad Alisawi" class="w-full h-full object-cover">
+                <div class="w-40 h-40 rounded-full border-4 border-blue-500 p-1 bg-white/10 shadow-2xl">
+                    <img src="./assets/images/Imad.jpg" alt="Imad Alisawi" class="w-full h-full rounded-full object-cover">
                 </div>
             </div>
         </header>
 
-        <main class="p-8 md:p-10 space-y-12">
+        <main class="p-8 md:p-12 space-y-16">
 
             <section>
-                <div class="flex items-center gap-3 mb-8 border-b-2 border-slate-100 pb-2">
-                    <i data-lucide="briefcase" class="text-blue-600 w-6 h-6"></i>
-                    <h2 class="text-2xl font-bold text-slate-800 uppercase tracking-wide">Berufserfahrung</h2>
+                <div class="flex items-center gap-3 mb-10 border-b border-slate-200 pb-4">
+                    <i data-lucide="code-2" class="text-blue-600 w-8 h-8"></i>
+                    <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tight">Tech-Stack & Skills</h2>
                 </div>
 
-                <div class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
+                            <i data-lucide="layout" class="w-5 h-5"></i> Frontend
+                        </h3>
+                        <ul class="text-sm space-y-2 font-medium">
+                            <li class="flex justify-between">React.js <span class="text-blue-400">90%</span></li>
+                            <li class="flex justify-between">JavaScript (ES6) <span class="text-blue-400">85%</span>
+                            </li>
+                            <li class="flex justify-between">HTML5 / CSS3 <span class="text-blue-400">95%</span></li>
+                            <li class="flex justify-between">Tailwind CSS <span class="text-blue-400">90%</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
+                            <i data-lucide="database" class="w-5 h-5"></i> Backend
+                        </h3>
+                        <ul class="text-sm space-y-2 font-medium">
+                            <li class="flex justify-between">Node.js <span class="text-blue-400">80%</span></li>
+                            <li class="flex justify-between">Express.js <span class="text-blue-400">80%</span></li>
+                            <li class="flex justify-between">MongoDB <span class="text-blue-400">75%</span></li>
+                            <li class="flex justify-between">REST APIs <span class="text-blue-400">85%</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
+                            <i data-lucide="settings" class="w-5 h-5"></i> Tools & Sonstiges
+                        </h3>
+                        <ul class="text-sm space-y-2 font-medium">
+                            <li class="flex justify-between">Git / GitHub <span class="text-blue-400">85%</span></li>
+                            <li class="flex justify-between">VPN Technologien <span class="text-blue-400">Junior</span>
+                            </li>
+                            <li class="flex justify-between">UI/UX Design <span class="text-blue-400">70%</span></li>
+                            <li class="flex justify-between">Deutsch / Arabisch <span class="text-blue-400">C1/Muttersprache</span></li>
+                        </ul>
+                    </div>
+                    </div>
+            </section>
 
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                        <div class="date-sidebar text-blue-600 font-semibold text-sm">seit Jun 2024</div>
+            <section>
+                <div class="flex items-center gap-3 mb-10 border-b border-slate-200 pb-4">
+                    <i data-lucide="briefcase" class="text-blue-600 w-8 h-8"></i>
+                    <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tight">Berufserfahrung</h2>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-12 relative">
+                        <div class="date-sidebar text-blue-600 font-bold text-sm pt-1 uppercase">seit Jun 2024</div>
                         <div class="flex-1">
-                            <h3 class="font-bold text-xl text-slate-900">Mitarbeiter bei BT Berlin Transport GmbH</h3>
-                            <p class="text-slate-500 font-medium">Junior in VPN</p>
+                            <h3 class="font-bold text-2xl text-slate-900 italic">BT Berlin Transport GmbH</h3>
+                            <p class="text-blue-500 font-semibold text-lg flex items-center gap-2">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i> Junior in VPN
+                            </p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                        <div class="date-sidebar text-slate-500 font-semibold text-sm">Dez 2022 – Feb 2024</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-xl text-slate-900">Fullstack Webentwicklung</h3>
-                            <p class="text-blue-600 font-medium italic">DCI Digital Career Institute GmbH, Berlin</p>
-                            <ul class="mt-3 space-y-2 text-slate-600 text-sm leading-relaxed list-none">
-                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Vollzeitausbildung mit
-                                    Schwerpunkt auf MERN-Stack-Technologien (MongoDB, Express, React, Node.js).</li>
-                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Entwicklung von
-                                    Online-Plattformen und To-Do-Apps mit JavaScript, HTML5 und CSS3.</li>
-                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Erfahrung in Frontend- &
-                                    Backend-Entwicklung sowie UI/UX Gestaltung.</li>
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase">Dez 2022 – Feb 2024
+                        </div>
+                        <div class="flex-1 border-l-2 border-slate-100 pl-6">
+                            <h3 class="font-bold text-2xl text-slate-900">Fullstack Webentwicklung</h3>
+                            <p class="text-slate-500 font-medium italic mb-3">DCI Digital Career Institute GmbH, Berlin
+                            </p>
+                            <ul class="space-y-2 text-slate-600 text-sm">
+                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Fokus auf MERN-Stack
+                                    (MongoDB, Express, React, Node.js)</li>
+                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Entwicklung moderner
+                                    Web-Applikationen</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                        <div class="date-sidebar text-slate-500 font-semibold text-sm">Sep 2018 – Sep 2020</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-xl text-slate-900">Mitarbeiter Qualitätssicherung</h3>
-                            <p class="text-slate-500 font-medium italic text-sm">Carl ZEISS GmbH, Berlin</p>
-                            <p class="mt-2 text-slate-600 text-sm">Beobachtung von Markttrends und Durchführung der
-                                Qualitätskontrolle.</p>
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase">Sep 2018 – Sep 2020
                         </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                        <div class="date-sidebar text-slate-500 font-semibold text-sm">Sep 2016 – Okt 2016</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-lg text-slate-900">Journalismus Praktikant</h3>
-                            <p class="text-slate-500 font-medium text-sm italic">RRB Abendschau, Berlin</p>
-                            <p class="mt-1 text-slate-600 text-sm">Begleitung der Journalisten im Außendienst.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                        <div class="date-sidebar text-slate-500 font-semibold text-sm">Juli 2016 – Aug 2016</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-lg text-slate-900">Journalismus Praktikant</h3>
-                            <p class="text-slate-500 font-medium text-sm italic">ZDF Morgenmagazin, Berlin:</p>
-                        </div>
-                        </div>
-                        
-                        <div class="flex flex-col md:flex-row gap-2 md:gap-8">
-                            <div class="date-sidebar text-slate-500 font-semibold text-sm">Juli 2012 – Juli 2014</div>
-                            <div class="flex-1">
-                                <h3 class="font-bold text-xl text-slate-900">Nachrichtensprecher und Reporter</h3>
-                                <p class="text-slate-500 font-medium italic text-sm">Radio Falludscha, Bagdad</p>
-                                <p class="mt-2 text-slate-600 text-sm">Tätig als Journalist, Kameramann und Radiosprecher.
-                                </p>
+                        <div class="flex-1 border-l-2 border-slate-100 pl-6">
+                            <h3 class="font-bold text-2xl text-slate-900">Mitarbeiter Qualitätssicherung</h3>
+                            <p class="text-slate-500 font-medium italic">Carl ZEISS GmbH, Berlin</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="bg-blue-50 p-4 rounded-lg text-blue-800 text-sm border-l-4 border-blue-500 italic">
-                Aug 2014: Übersiedlung nach Deutschland.
-                </div>
+<div
+    class="bg-blue-900 text-white p-6 rounded-2xl flex items-center gap-6 shadow-lg transform hover:scale-[1.01] transition">
+    <i data-lucide="globe" class="w-12 h-12 text-blue-400"></i>
+    <p class="italic">2014: Beginn eines neuen Kapitels in Deutschland. Vom erfahrenen Journalisten zum
+        IT-Spezialisten.</p>
+</div>
 
         </main>
 
-        <footer class="bg-slate-900 p-6 text-center text-slatcde-400 text-xs">
-            &copy; 2026 Imad Alisawi | Professionelles Portfolio
+        <footer class="bg-slate-900 p-8 text-center text-slate-500 text-xs tracking-widest uppercase">
+            &copy; 2026 Imad Alisawi | Fullstack Portfolio
         </footer>
     </div>
 
