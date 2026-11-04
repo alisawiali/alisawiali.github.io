@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lebenslauf – Imad Alisawi</title>
+    <title>Lebenslauf – Imad Alisawi | Fullstack Webentwickler</title>
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -17,159 +19,233 @@
         }
 
         .date-sidebar {
-            min-width: 160px;
+            min-width: 170px;
         }
 
         .gradient-bg {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
-        .skill-card:hover {
-            transform: translateY(-5px);
+        .skill-card {
             transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
+        }
+
+        @media print {
+            body {
+                background: white !important;
+                padding: 0 !important;
+            }
+
+            .shadow-2xl,
+            .shadow-lg {
+                box-shadow: none !important;
+            }
+
+            .skill-card:hover {
+                transform: none !important;
+            }
         }
     </style>
 </head>
 
-<body class="bg-slate-100 text-slate-800 p-4 md:p-12">
+<body class="bg-slate-100 text-slate-800 p-4 md:p-8 antialiased">
 
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-slate-200">
 
+        <!-- Header -->
         <header
             class="gradient-bg text-white p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8 border-b-4 border-blue-500">
             <div class="space-y-4 text-center md:text-left">
-                <h1 class="text-5xl font-extrabold tracking-tight">Imad Alisawi</h1>
-                <p class="text-blue-400 font-semibold text-xl uppercase tracking-widest">Fullstack Webentwickler</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Imad Alisawi</h1>
+                <p class="text-blue-400 font-semibold text-lg uppercase tracking-widest">Fullstack Webentwickler</p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300 pt-2">
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Berlin, Charlottenburg
+                        <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 shrink-0"></i> Berlin, Charlottenburg
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i> <a href="mailto:alisawiali70@gmail.com"
-                            class="hover:text-white transition">alisawiali70@gmail.com</a>
+                        <i data-lucide="mail" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                        <a href="mailto:alisawiali70@gmail.com"
+                            class="hover:text-white transition underline underline-offset-4">alisawiali70@gmail.com</a>
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="phone" class="w-4 h-4 text-blue-400"></i> +49 176 81423083
+                        <i data-lucide="phone" class="w-4 h-4 text-blue-400 shrink-0"></i> +49 176 81423083
                     </div>
                     <div class="flex items-center justify-center md:justify-start gap-2">
-                        <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> <a
-                            href="https://www.linkedin.com/in/alisawi-imad/" target="_blank"
-                            class="hover:text-white transition">LinkedIn Profil</a>
+                        <i data-lucide="linkedin" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                        <a href="https://www.linkedin.com/in/alisawi-imad/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-white transition underline underline-offset-4">LinkedIn Profil</a>
                     </div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="w-40 h-40 rounded-full border-4 border-blue-500 p-1 bg-white/10 shadow-2xl">
+            <div class="relative shrink-0">
+                <div class="w-36 h-36 md:w-40 md:h-40 rounded-full border-4 border-blue-500 p-1 bg-white/10 shadow-xl">
                     <img src="./assets/images/Imad.jpg" alt="Imad Alisawi" class="w-full h-full rounded-full object-cover">
                 </div>
             </div>
         </header>
 
-        <main class="p-8 md:p-12 space-y-16">
+        <!-- Main Content -->
+        <main class="p-6 md:p-12 space-y-12">
 
+            <!-- Tech-Stack & Skills -->
             <section>
-                <div class="flex items-center gap-3 mb-10 border-b border-slate-200 pb-4">
-                    <i data-lucide="code-2" class="text-blue-600 w-8 h-8"></i>
-                    <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tight">Tech-Stack & Skills</h2>
+                <div class="flex items-center gap-3 mb-8 border-b border-slate-200 pb-4">
+                    <i data-lucide="code-2" class="text-blue-600 w-7 h-7"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 uppercase tracking-tight">Tech-Stack &
+                        Skills</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Frontend -->
                     <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
-                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2">
                             <i data-lucide="layout" class="w-5 h-5"></i> Frontend
                         </h3>
-                        <ul class="text-sm space-y-2 font-medium">
-                            <li class="flex justify-between">React.js <span class="text-blue-400">90%</span></li>
-                            <li class="flex justify-between">JavaScript (ES6) <span class="text-blue-400">85%</span>
+                        <ul class="text-sm space-y-2.5 font-medium text-slate-700">
+                            <li class="flex justify-between items-center">React.js <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Fortgeschritten</span>
                             </li>
-                            <li class="flex justify-between">HTML5 / CSS3 <span class="text-blue-400">95%</span></li>
-                            <li class="flex justify-between">Tailwind CSS <span class="text-blue-400">90%</span></li>
+                            <li class="flex justify-between items-center">JavaScript (ES6+) <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Fortgeschritten</span>
+                            </li>
+                            <li class="flex justify-between items-center">HTML5 / CSS3 <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Experte</span>
+                            </li>
+                            <li class="flex justify-between items-center">Tailwind CSS <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Fortgeschritten</span>
+                            </li>
                         </ul>
                     </div>
+                    <!-- Backend -->
                     <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
-                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2">
                             <i data-lucide="database" class="w-5 h-5"></i> Backend
                         </h3>
-                        <ul class="text-sm space-y-2 font-medium">
-                            <li class="flex justify-between">Node.js <span class="text-blue-400">80%</span></li>
-                            <li class="flex justify-between">Express.js <span class="text-blue-400">80%</span></li>
-                            <li class="flex justify-between">MongoDB <span class="text-blue-400">75%</span></li>
-                            <li class="flex justify-between">REST APIs <span class="text-blue-400">85%</span></li>
-                        </ul>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
-                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2 italic">
-                            <i data-lucide="settings" class="w-5 h-5"></i> Tools & Sonstiges
-                        </h3>
-                        <ul class="text-sm space-y-2 font-medium">
-                            <li class="flex justify-between">Git / GitHub <span class="text-blue-400">85%</span></li>
-                            <li class="flex justify-between">VPN Technologien <span class="text-blue-400">Junior</span>
+                        <ul class="text-sm space-y-2.5 font-medium text-slate-700">
+                            <li class="flex justify-between items-center">Node.js <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Gute
+                                    Kenntnisse</span></li>
+                            <li class="flex justify-between items-center">Express.js <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Gute
+                                    Kenntnisse</span></li>
+                            <li class="flex justify-between items-center">MongoDB <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Praxisnah</span>
                             </li>
-                            <li class="flex justify-between">UI/UX Design <span class="text-blue-400">70%</span></li>
-                            <li class="flex justify-between">Deutsch / Arabisch <span class="text-blue-400">C1/Muttersprache</span></li>
+                            <li class="flex justify-between items-center">REST APIs <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Fortgeschritten</span>
+                            </li>
                         </ul>
                     </div>
+                    <!-- Tools & Sonstiges -->
+                    <div class="bg-slate-50 p-6 rounded-xl skill-card border border-slate-200">
+                        <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2">
+                            <i data-lucide="settings" class="w-5 h-5"></i> Tools & Sprachen
+                        </h3>
+                        <ul class="text-sm space-y-2.5 font-medium text-slate-700">
+                            <li class="flex justify-between items-center">Git / GitHub <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Sicher</span>
+                            </li>
+                            <li class="flex justify-between items-center">VPN-Technologien <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Administration</span>
+                            </li>
+                            <li class="flex justify-between items-center">UI/UX Design <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">Grundlagen</span>
+                            </li>
+                            <li class="flex justify-between items-center">Deutsch / Arabisch <span
+                                    class="text-blue-600 font-semibold text-xs bg-blue-50 px-2 py-0.5 rounded">C1 /
+                                    Muttersprache</span></li>
+                        </ul>
                     </div>
+                </div>
             </section>
 
+            <!-- Berufserfahrung -->
             <section>
-                <div class="flex items-center gap-3 mb-10 border-b border-slate-200 pb-4">
-                    <i data-lucide="briefcase" class="text-blue-600 w-8 h-8"></i>
-                    <h2 class="text-3xl font-bold text-slate-900 uppercase tracking-tight">Berufserfahrung</h2>
+                <div class="flex items-center gap-3 mb-8 border-b border-slate-200 pb-4">
+                    <i data-lucide="briefcase" class="text-blue-600 w-7 h-7"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 uppercase tracking-tight">Berufserfahrung
+                    </h2>
                 </div>
 
-                <div class="space-y-12">
+                <div class="space-y-10">
+                    <!-- BT Berlin Transport GmbH -->
                     <div class="flex flex-col md:flex-row gap-4 md:gap-12 relative">
-                        <div class="date-sidebar text-blue-600 font-bold text-sm pt-1 uppercase">seit Jun 2024</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-2xl text-slate-900 italic">BT Berlin Transport GmbH</h3>
-                            <p class="text-blue-500 font-semibold text-lg flex items-center gap-2">
-                                <i data-lucide="shield-check" class="w-5 h-5"></i> Junior in VPN
+                        <div class="date-sidebar text-blue-600 font-bold text-sm pt-1 uppercase tracking-wider">seit Jun
+                            2024</div>
+                        <div class="flex-1 border-l-2 border-blue-100 pl-6 space-y-2">
+                            <h3 class="font-bold text-xl text-slate-900">BT Berlin Transport GmbH</h3>
+                            <p class="text-blue-600 font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i> IT-Mitarbeiter / VPN-Administration
                             </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
-                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase">Dez 2022 – Feb 2024
-                        </div>
-                        <div class="flex-1 border-l-2 border-slate-100 pl-6">
-                            <h3 class="font-bold text-2xl text-slate-900">Fullstack Webentwicklung</h3>
-                            <p class="text-slate-500 font-medium italic mb-3">DCI Digital Career Institute GmbH, Berlin
-                            </p>
-                            <ul class="space-y-2 text-slate-600 text-sm">
-                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Fokus auf MERN-Stack
-                                    (MongoDB, Express, React, Node.js)</li>
-                                <li class="flex gap-2"><span class="text-blue-500">▹</span> Entwicklung moderner
-                                    Web-Applikationen</li>
+                            <ul class="space-y-1.5 text-slate-600 text-sm pt-1">
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Betreuung,
+                                    Konfiguration und Verwaltung von VPN-Infrastrukturen und Netzwerken</li>
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Technischer
+                                    Support, Fehlerbehebung und Gewährleistung der IT-Sicherheit im laufenden Betrieb
+                                </li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- DCI -->
                     <div class="flex flex-col md:flex-row gap-4 md:gap-12">
-                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase">Sep 2018 – Sep 2020
+                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase tracking-wider">Dez
+                            2022 – Feb 2024</div>
+                        <div class="flex-1 border-l-2 border-slate-200 pl-6 space-y-2">
+                            <h3 class="font-bold text-xl text-slate-900">Fullstack Webentwicklung (Weiterbildung)</h3>
+                            <p class="text-slate-500 font-medium italic">DCI Digital Career Institute GmbH, Berlin</p>
+                            <ul class="space-y-1.5 text-slate-600 text-sm pt-1">
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Intensive
+                                    Ausbildung mit Fokus auf den MERN-Stack (MongoDB, Express.js, React.js, Node.js)
+                                </li>
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Konzeption und
+                                    agile Umsetzung moderner, responsiver Web-Applikationen im Team</li>
+                            </ul>
                         </div>
-                        <div class="flex-1 border-l-2 border-slate-100 pl-6">
-                            <h3 class="font-bold text-2xl text-slate-900">Mitarbeiter Qualitätssicherung</h3>
+                    </div>
+
+                    <!-- Carl Zeiss -->
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                        <div class="date-sidebar text-slate-500 font-bold text-sm pt-1 uppercase tracking-wider">Sep
+                            2018 – Sep 2020</div>
+                        <div class="flex-1 border-l-2 border-slate-200 pl-6 space-y-2">
+                            <h3 class="font-bold text-xl text-slate-900">Mitarbeiter Qualitätssicherung</h3>
                             <p class="text-slate-500 font-medium italic">Carl ZEISS GmbH, Berlin</p>
+                            <ul class="space-y-1.5 text-slate-600 text-sm pt-1">
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Prüfung und
+                                    Sicherstellung hoher Qualitätsstandards in der Produktion</li>
+                                <li class="flex gap-2"><span class="text-blue-500 font-bold">▹</span> Präzise
+                                    Dokumentation und strukturierte Prozessoptimierung</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
-<div
-    class="bg-blue-900 text-white p-6 rounded-2xl flex items-center gap-6 shadow-lg transform hover:scale-[1.01] transition">
-    <i data-lucide="globe" class="w-12 h-12 text-blue-400"></i>
-    <p class="italic">2014: Beginn eines neuen Kapitels in Deutschland. Vom erfahrenen Journalisten zum
-        IT-Spezialisten.</p>
-</div>
+<!-- Bio / Info Box -->
+            <div
+                class="bg-slate-900 text-white p-6 rounded-2xl flex flex-col sm:flex-row items-center gap-6 shadow-lg border border-slate-800">
+                <i data-lucide="globe" class="w-12 h-12 text-blue-400 shrink-0"></i>
+                <p class="text-sm md:text-base text-slate-300 italic text-center sm:text-left">
+                    "2014: Beginn eines neuen Kapitels in Deutschland. Vom erfahrenen Journalisten zum IT-Spezialisten –
+                    zielstrebig, anpassungsfähig und leidenschaftlich in der Softwareentwicklung."
+                </p>
+            </div>
 
         </main>
 
-        <footer class="bg-slate-900 p-8 text-center text-slate-500 text-xs tracking-widest uppercase">
-            &copy; 2026 Imad Alisawi | Fullstack Portfolio
+        <!-- Footer -->
+        <footer class="bg-slate-900 p-6 text-center text-slate-400 text-xs tracking-widest uppercase border-t border-slate-800">
+            &copy; 2026 Imad Alisawi &bull; Fullstack Portfolio & Lebenslauf
         </footer>
     </div>
 
+    <!-- Init Icons -->
     <script>
             lucide.createIcons();
         </script>
